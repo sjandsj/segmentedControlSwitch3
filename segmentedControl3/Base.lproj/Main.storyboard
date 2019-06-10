@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="segmentedControl3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3dl-tw-ktH">
+                                <rect key="frame" x="9" y="38" width="343" height="28"/>
+                                <color key="backgroundColor" red="1" green="0.23842464579420231" blue="0.30502432462599383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                </segments>
+                                <color key="tintColor" red="0.32118170259005818" green="1" blue="0.20817808925740477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentControlSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="oCI-SS-Bcn"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhi-WK-QlD">
+                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
+                                <color key="backgroundColor" red="0.91457135310908955" green="1" blue="0.17539483971176095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.08304939931465373" green="0.53487289507772018" blue="0.52404425896470563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3dl-tw-ktH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="3LO-pE-hju"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uhi-WK-QlD" secondAttribute="trailing" id="7R2-t2-zls"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3dl-tw-ktH" secondAttribute="bottom" constant="602" id="H2L-yO-Pu2"/>
+                            <constraint firstItem="Uhi-WK-QlD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T1g-kO-QbE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3dl-tw-ktH" secondAttribute="trailing" constant="23" id="cLn-SP-xaz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uhi-WK-QlD" secondAttribute="bottom" id="las-b2-hoy"/>
+                            <constraint firstItem="3dl-tw-ktH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="xAp-bD-NMD"/>
+                            <constraint firstItem="Uhi-WK-QlD" firstAttribute="top" secondItem="3dl-tw-ktH" secondAttribute="bottom" constant="30" id="y4L-Ly-CAz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmantControllerOutlet" destination="3dl-tw-ktH" id="WaZ-ty-La1"/>
+                        <outlet property="viewContainer" destination="Uhi-WK-QlD" id="8rS-Kr-l1w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="126"/>
+        </scene>
+    </scenes>
+</document>
